@@ -1,0 +1,23 @@
+{
+  "name": "danhngon",
+  "version": "1.0.0",
+  "description": "Front End Danh Ngon web application",
+  "main": "gulpfile.js",
+  "scripts": {
+		"start": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+	"dependencies": {
+    "bower": "^1.8.4",
+    "susy": "^2.2.12"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "browser-sync": "^2.24.4",
+    "gulp-ruby-sass": "^3.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
