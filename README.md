@@ -1,8 +1,8 @@
 # Front End Danh Ngon 
 
 Phát triển Front End cho ứng dụng Danh Ngôn, sử dụng công nghệ: 
-*[Gulp](https://gulpjs.com/) - Tự dộng hóa và nâng cao quy trình công việc của bạn. 
-*[PreProcessor CSS - SASS](https://sass-lang.com/) - Sử dụng SASS và các framework xây dựng với sass như compass, susy, break-point để nâng cao quy trình thiết kế css.
+ * [Gulp](https://gulpjs.com/) - Tự dộng hóa và nâng cao quy trình công việc của bạn. 
+ * [PreProcessor CSS - SASS](https://sass-lang.com/) - Sử dụng SASS và các framework xây dựng với sass như compass, susy, break-point để nâng cao quy trình thiết kế css.
 
 ## Getting Started
 
