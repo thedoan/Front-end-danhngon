@@ -3,23 +3,27 @@
 	<head>
 		<meta charset='UTF-8'/>
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
-		<title>Semantic HTML</title>
+		<link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
+		<title>Trang Chủ - Danh Ngôn</title>
 	</head>
 	<body>
-		<div class='page'>    
-			<header>
-				<h1>Interneting Is Easy!</h1>
-				<nav>
-					<h2>Main Nav</h2>
-					<ul>
-						<li><a href='#'>Home</a></li>
-						<li><a href='#'>About</a></li>
-						<li><a href='#'>Blog</a></li>
-						<li><a href='#'>Sign Up</a></li>
+		<header class="site-header">
+			<div class="wrap">
+				<div class="site-header__logo"><a href="#">Logo</a></div>
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a class="main-nav__link" href='#'>Home</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href='#'>About</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href='#'>Blog</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href='#'>Login</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href='#'>Sign Up</a></li>
 					</ul>
 				</nav>
-			</header>
+			</div>
+		</header>
+		<div class="wrap">
+			<!-- .content -->
+			<main class="content">
 			<article>
 				<header>
 					<h1>Semantic HTML</h1>
@@ -43,7 +47,7 @@
 					</p>
 					<figure>
 						<img src='http://placehold.it/300x100/e8117f/ffffff?text=Diargam Demonstrate'
-												alt='Diagram showing article, section, and nav elements'/>
+				 alt='Diagram showing article, section, and nav elements'/>
 						<figcaption>New HTML5 semantic elements</figcaption>
 					</figure>
 					<h3>Headers</h3>
@@ -70,6 +74,9 @@
 					</address>
 				</footer>     
 			</article>
+			</main>
+			<!-- /.content -->
+			<!-- .sidebar -->
 			<aside class='sidebar'>
 				<h2>Sidebar</h2>
 				<p>Some sidebar content</p>
@@ -90,9 +97,27 @@
 					</ul>
 				</nav>
 			</aside>
-			<footer>
-				<p>&copy; 2017 InternetingIsHard.com</p>
-			</footer>
+			<!-- /.sidebar -->
 		</div>
+			<footer class="site-footer">
+				<div class="wrap">
+					<div class="site-footer__widget">
+						<h2>Widget</h2>
+					</div>
+
+					<div class="site-footer__widget">
+						<h2>Widget</h2>
+					</div>
+
+					<div class="site-footer__widget">
+						<h2>Widget</h2>
+					</div>
+
+					<div class="site-footer__widget">
+						<h2>Widget</h2>
+					</div>
+					<p class="site-footer__copyright">&copy; 2017 InternetingIsHard.com</p>
+				</div>
+			</footer>
 	</body>
 </html>

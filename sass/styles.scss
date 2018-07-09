@@ -1,0 +1,43 @@
+@import 'compass';
+@import "susy";
+/// Changing the default settings
+$susy: (
+/// Assigning value to the column property 
+columns: 12,
+/// debug: (
+///	image: show,
+///	color: rgba(#656, .25)
+// ),
+/// Assigning max-width for the container 
+container: 980px,
+/// for using the border-box 
+global-box-sizing: border-box 
+);
+/// 1. abstracts/
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
+/// 2. vendors/
+@import 'vendors/bootstrap';
+@import 'vendors/jquery-ui';
+
+/// 3. base/
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/base';
+
+/// 4. layout/
+//@import 'layout/page';
+@import 'layout/wrap';
+@import 'layout/header';
+@import 'layout/content';
+@import 'layout/sidebar';
+@import 'layout/footer';
+/// 5. components/
+@import 'components/main-nav';
+/// 6. pages/
+
+/// 7. themes/
+

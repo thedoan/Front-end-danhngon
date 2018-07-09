@@ -1,0 +1,14 @@
+.site-header {
+	@include box-shadow(0 .2rem .6rem rgba($color-black, .15));
+	&__logo {
+		float: left;
+		line-height: 2rem;
+		font-size: 1.5rem;
+	}
+	&__nav {
+		float: right;
+	}
+}
+
+
+

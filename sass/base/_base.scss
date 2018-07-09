@@ -1,0 +1,21 @@
+/// To make border-box property
+@include border-box-sizing;
+/// ===Settings base element===
+/// h1,2,3....
+/// p ....
+/// setting line-height relative to base-font-size for html element
+/// http://compass-style.org/reference/compass/typography/vertical_rhythm/#mixin-establish-baseline
+@include establish-baseline;
+
+/// To adjust our heading sizes, we'll need to let Compass know we want to adjust
+/// their size in relation to the vertical rhythm we've defined. For this, we use the adjust-
+/// font-size-to mixin.
+/// http://compass-style.org/reference/compass/typography/vertical_rhythm/#mixin-adjust-font-size-to
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		@include adjust-font-size-to($base-font-size * nth($base-heading-sizes, $i));
+	}
+}
+
+

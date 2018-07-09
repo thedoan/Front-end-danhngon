@@ -1,0 +1,5 @@
+.content {
+	@include span(8);	
+	padding: gutter();
+	@include box-shadow(0 0 .3rem rgba($color-black, .15));
+}

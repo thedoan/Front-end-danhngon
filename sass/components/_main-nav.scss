@@ -1,0 +1,21 @@
+.main-nav {
+	float: right;
+	&__list {
+		
+	}
+	&__item {
+		list-style: none;	
+		float: left;
+		margin-left: 1rem;
+		line-height: 2rem;
+		&:last-child {
+			margin-right: 1rem;
+		}
+	}
+	&__link {
+		text-decoration: none;	
+		&:hover {
+			
+		}
+	}	
+}

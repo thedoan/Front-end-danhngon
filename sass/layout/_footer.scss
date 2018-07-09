@@ -1,0 +1,14 @@
+.site-footer {
+
+	@include box-shadow(0 .2rem .6rem rgba($color-black, .15));
+	&__copyright {
+		@include span(12);
+		text-align: center;
+	}
+	&__widget {
+		@include span(3 of 12);
+		&:nth-child(4n) {
+			@include last;	
+		}
+	}
+}
