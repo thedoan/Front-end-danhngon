@@ -4,12 +4,12 @@
   "description": "Front End Danh Ngon web application",
   "main": "gulpfile.js",
   "scripts": {
-		"start": "gulp"
+    "start": "gulp"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-	"dependencies": {
+  "dependencies": {
     "bower": "^1.8.4",
     "susy": "^2.2.12"
   },
