@@ -7,6 +7,11 @@ $color-medium-green: #55c57a;
 $color-sunflower: #f1c40f;
 // ----
 $color-primary: $color-medium-green;
+//$color-border
+//$color-background
+//$color-background-alt
+//$color-text
+//$color-text-alt
 // ===Typograhpy===
 $base-font-size: 18px;
 $base-line-height: $base-font-size * 1.5;
@@ -17,3 +22,14 @@ $base-font-family-lato: 'Lato';
 $base-font-family: $base-font-family-serif;
 $base-headings-font-family: $base-font-family-serif;
 $base-heading-sizes: (2, 1.5, 1.17, 1, 0.83, 0.67);
+
+// ===Breakpoint===
+$bp-small: 600px;
+$bp-medium: 900px;
+$bp-large: 1200px;
+
+$breakpoints: (
+	small: 600px,
+	medium: 900px,
+	large: 1200px
+);

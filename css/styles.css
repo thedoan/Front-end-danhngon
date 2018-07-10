@@ -336,9 +336,9 @@ body {
 
 a {
   color: #55c57a; }
-  a:visited {
+  a:visited, a:active {
     color: #277340; }
-  a:hover {
+  a:hover, a:focus {
     color: #8ed8a7; }
 
 .wrap {
@@ -415,8 +415,24 @@ a {
   .main-nav a {
     color: #daf2e2;
     text-decoration: none; }
+  .main-nav__left {
+    float: left;
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%; }
+  .main-nav__right {
+    float: right;
+    width: 66.10169%;
+    float: right;
+    margin-right: 0; }
   .main-nav__brand {
-    float: left; }
+    padding-top: 20px; }
+    .main-nav__brand a {
+      color: #f7dc6f;
+      font-size: 3em;
+      font-weight: 300; }
+  .main-nav__search {
+    float: right; }
   .main-nav__list {
     float: right; }
   .main-nav__item {
@@ -583,7 +599,10 @@ a {
 
 .c-slogan {
   min-height: 200px;
-  position: relative; }
+  position: relative;
+  background-image: url("../img/sun-flower-leave.png");
+  background-repeat: no-repeat;
+  background-size: 150px; }
   .c-slogan::after {
     content: "";
     display: table;
@@ -601,5 +620,27 @@ a {
     .c-slogan__text span {
       display: block;
       margin-top: 2rem; }
+
+.c-search {
+  margin-top: 5px;
+  margin-right: 1rem;
+  position: relative; }
+  .c-search__text {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 250px;
+    height: 32px;
+    border: 1px solid #aaa;
+    background-color: #fcfcfc;
+    -moz-box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+    -webkit-box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+    box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+    text-indent: 32px; }
+  .c-search__icon-search {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #aa8a0a; }
 
 

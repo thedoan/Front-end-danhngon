@@ -26,10 +26,12 @@ body {
 }
 a {
 	color: $color-primary;
-	&:visited {
+	&:visited,
+  &:active	{
 		color: darken($color-primary, 25%);
 	}
-	&:hover {
+	&:hover,
+  &:focus	{
 		color: lighten($color-primary, 15%);
 	}
 }

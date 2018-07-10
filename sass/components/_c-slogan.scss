@@ -1,6 +1,9 @@
 .c-slogan {
 	min-height: 200px;
 	position: relative;
+	background-image: url('../img/sun-flower-leave.png');
+	background-repeat: no-repeat;
+	background-size: 150px;
 	@include clearfix;
 	//@include background-image(radial-gradient(100px 100px, cyan 10px, $color-medium-green 30px));
 	//@include background-image(radial-gradient(lighten($color-medium-green, 30%), $color-medium-green));

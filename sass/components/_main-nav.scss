@@ -8,8 +8,24 @@
 		color: lighten($color-medium-green, 35%);
 		text-decoration: none;
 	}
-	&__brand {
+	&__left {
 		float: left;	
+		@include span(4);
+	}
+	&__right {
+		float: right;
+		@include span(8 last);	
+	}
+	&__brand {
+		padding-top: 20px;
+		a {
+			color: lighten($color-sunflower,20%);
+			font-size: 3em;
+			font-weight: 300;
+		}
+	}
+	&__search {
+		float: right;
 	}
 	&__list {
 		float: right;
