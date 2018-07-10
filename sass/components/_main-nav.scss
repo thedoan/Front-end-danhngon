@@ -1,7 +1,18 @@
 .main-nav {
-	float: right;
+	//background-color: darken($color-medium-green, 10%);
+	@include box-shadow(0 0 .3rem rgba($color-black, .15));
+	@include clearfix();
+	//@include border-radius(5px);
+	padding: 5px;
+	a {
+		color: lighten($color-medium-green, 35%);
+		text-decoration: none;
+	}
+	&__brand {
+		float: left;	
+	}
 	&__list {
-		
+		float: right;
 	}
 	&__item {
 		list-style: none;	
@@ -13,9 +24,10 @@
 		}
 	}
 	&__link {
+		color: lighten($color-medium-green, 35%);
 		text-decoration: none;	
 		&:hover {
-			
+			color: lighten($color-sunflower, 20%);	
 		}
 	}	
 }

@@ -1,0 +1,19 @@
+.c-slogan {
+	min-height: 200px;
+	position: relative;
+	@include clearfix;
+	//@include background-image(radial-gradient(100px 100px, cyan 10px, $color-medium-green 30px));
+	//@include background-image(radial-gradient(lighten($color-medium-green, 30%), $color-medium-green));
+	&__text {
+		@include absCenter;	
+		top: 25%;// overide absCenter top
+		text-align: center;
+		color: lighten($color-medium-green, 55%);
+		font-size: 3rem;
+		font-weight: 300;
+		span {
+			display: block;
+			margin-top: 2rem;
+		}
+	}
+}

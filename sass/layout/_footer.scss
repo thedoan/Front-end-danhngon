@@ -1,5 +1,8 @@
 .site-footer {
-
+	margin-top: 1rem;
+	background-color: darken($color-brown, 30%);
+	//background-color: darken($color-white, 75%);
+	color: darken($color-white, 10%);
 	@include box-shadow(0 .2rem .6rem rgba($color-black, .15));
 	&__copyright {
 		@include span(12);

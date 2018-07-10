@@ -1,0 +1,23 @@
+.single-breadcumb {
+	position: relative;
+	background-color: green;
+	width: 10em;
+	&::before {
+		background-color: darkgreen;
+		position: absolute;	
+		width: 30em;
+		top: -2px;
+		left: 2em;
+		display:block;
+		margin: 50px;
+		padding: 50px;
+	}
+	&::after {
+		background-color: lightgreen;
+		position: absolute;	
+		width: 20em;
+		display: block;
+		margin: 50px;
+		padding: 50px;
+	}
+}

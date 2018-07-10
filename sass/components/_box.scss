@@ -1,0 +1,11 @@
+.box {
+	width: 200px;
+	height: 100px;
+	background-color: rgba($color-medium-green, .15);
+	@include box-shadow(0 0 .3rem rgba($color-black, .15));
+	&--right {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}

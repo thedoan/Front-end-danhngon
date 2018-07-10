@@ -1,5 +1,7 @@
 .content {
+	overflow: hidden;
 	@include span(8);	
-	padding: gutter();
+	padding-left: gutter();
+	padding-right: gutter();
 	@include box-shadow(0 0 .3rem rgba($color-black, .15));
 }
