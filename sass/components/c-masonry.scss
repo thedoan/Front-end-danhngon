@@ -1,0 +1,38 @@
+.c-masonry { /* Masonry container */
+	@include column-count(4);
+	@include column-gap(20px);
+	@include column-fill(initial);
+	/// ---dev--- 
+	counter-reset: masonry-item;	
+	/// ./ ---dev---
+	&__item {
+		display: block;
+		margin: 0 0 20px;
+		padding: 20px;
+		width: 100%; 
+		page-break-inside: avoid;          
+		//@include break-inside(avoid-column);
+		@include column-break-inside(avoid-column);
+		@include border-radius(3px);
+		background-color: $color-white;
+		overflow: hidden;
+		transition: all 0.3s ease;
+		&:hover {
+			transform: translateY(-5px);
+			@include box-shadow(0 20px 20px -5px rgba($color-black, .3));
+		}
+		/// ---dev---
+		position: relative;
+		min-height: 200px;
+		&:before {
+			counter-increment: masonry-item;
+			content: counter(masonry-item);
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		/// ./ ---dev---
+
+	}
+}
+

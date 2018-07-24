@@ -12,3 +12,19 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+$breakpoints: (
+	small: 600px,
+	medium: 900px,
+	large: 1200px
+) !default;
+@mixin respond-to($breakpoint: medium) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media(min-width: #{map-get($breakpoints, $breakpoint)}) {
+			@content;	
+		}	
+	}@else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`."
+			+ "Please make sure it is defined in `$breakpoints` map.";
+	}
+}

@@ -11,12 +11,19 @@
 		@include absCenter;	
 		top: 25%;// overide absCenter top
 		text-align: center;
-		color: lighten($color-medium-green, 55%);
-		font-size: 3rem;
+		//color: lighten($color-medium-green, 55%);
+		color: $color-white;
+		font-size: 1.6rem;
 		font-weight: 300;
-		span {
+			span {
 			display: block;
-			margin-top: 2rem;
+		}
+		@include respond-to() {
+			font-size: 3rem;
+			font-weight: 300;
+			span {
+				margin-top: 2rem;
+			}
 		}
 	}
 }

@@ -9,7 +9,7 @@ columns: 12,
 ///	color: rgba(#656, .25)
 // ),
 /// Assigning max-width for the container 
-container: 980px,
+container: 1140px,
 /// for using the border-box 
 global-box-sizing: border-box 
 );
@@ -31,10 +31,12 @@ global-box-sizing: border-box
 /// 4. layout/
 //@import 'layout/page';
 @import 'layout/wrap';
+@import 'layout/page';
 @import 'layout/header';
 @import 'layout/content';
 @import 'layout/sidebar';
 @import 'layout/footer';
+@import 'layout/section';
 /// 5. components/
 @import 'components/main-nav';
 @import 'components/single-breadcumb';
@@ -44,6 +46,10 @@ global-box-sizing: border-box
 @import 'components/box';
 @import 'components/c-slogan';
 @import 'components/c-search';
+@import 'components/c-breadcumb';
+@import 'components/c-card';
+@import 'components/c-go-top';
+@import 'components/c-masonry';
 /// 6. pages/
 
 /// 7. themes/

@@ -5,6 +5,9 @@ $color-brown: brown;// brown
 $color-dark-brown: darkbrown;// brown
 $color-medium-green: #55c57a;
 $color-sunflower: #f1c40f;
+$color-sunflower-light-20: lighten($color-sunflower, 20%);
+$color-sunflower-light-30: lighten($color-sunflower, 30%);
+$color-sunflower-light-40: lighten($color-sunflower, 40%);
 // ----
 $color-primary: $color-medium-green;
 //$color-border
@@ -29,7 +32,7 @@ $bp-medium: 900px;
 $bp-large: 1200px;
 
 $breakpoints: (
-	small: 600px,
-	medium: 900px,
-	large: 1200px
+	small: $bp-small,
+	medium: $bp-medium,
+	large: $bp-large 
 );

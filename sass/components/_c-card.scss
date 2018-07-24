@@ -1,0 +1,91 @@
+$c-card-border: 1px solid darken($color-primary, 20%);
+.c-card {
+	display: inline-block;
+	max-width: 350px;
+	//position: relative;
+	text-align: left;
+	//float: left;
+	//background-color: lighten($color-primary, 38%);
+	background-color: lighten($color-primary, 5%);
+	//@include background-image(radial-gradient(lighten($color-primary, 20%), $color-primary));
+	color: white;
+	font-weight: 700;
+	font-style: oblique;
+	//@include span(4 of 12);
+	//min-height: 250px;
+	//margin-bottom: gutter(); 
+	//padding: gutter();
+	//border-radius: 3px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	@include box-shadow(0 6px 10px -5px rgba($color-black, .2));
+	//@include box-shadow(0 1.5rem 4rem rgba($color-black, .15));
+	&--sunflower {
+		color: $color-sunflower-light-40;	
+	}
+	&--thin {
+		font-weight: 100;	
+	}
+	&--bold {
+		font-weight: 900;
+	}
+	/*
+	&:hover {
+		transform: translateY(-5px);
+		@include box-shadow(0 20px 20px -5px rgba($color-black, .3));
+	}
+	*/
+	/*
+	&:nth-child(3n) {
+		@include last;
+	}
+	*/
+	&__header {
+		/*
+		border-bottom: $c-card-border;
+		margin-bottom: gutter();
+		padding-bottom: gutter();
+		font-weight: 700;
+		 */
+	}
+	&__image {
+		max-width: 100%;
+	}
+	&__body {
+		padding: gutter();	
+		blockquote {
+			p {
+				padding: 15px;
+				&:before {
+					content: '\201C';
+				}
+				&:after {
+					content: '\201D';
+				}
+			}
+		}
+	}
+	&__title {
+		text-transform: uppercase;
+		font-weight: 700;
+		line-height: 1.2;
+	}
+	&__subtitle {
+		font-weight: 300;
+		margin-top: 5px;
+		padding: 0;
+		color: darken($color-white, 40%);
+	}
+
+
+	&__footer {
+		//position: absolute;
+		border-top: $c-card-border;
+		//margin-top: gutter();
+		//bottom: 0;
+		padding: gutter();
+
+	}
+
+}

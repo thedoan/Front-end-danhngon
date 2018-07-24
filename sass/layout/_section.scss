@@ -1,0 +1,38 @@
+.section {
+	&__header {
+		margin-top: 40px;		
+	}
+	&__content {
+		margin-top: 40px;
+		/*
+		&:after {
+			content: " ";
+			display: block;
+			clear: both;
+		}
+		*/
+	}
+	&__load-more {
+		width: 100%;
+		display: block;
+		//padding: 20px;
+		margin-top: 20px;
+		text-align: center;
+		background-color: $color-white;
+		@include border-radius(3px);
+		a {
+
+			color: $color-sunflower-light-40;
+			display: inline-block;
+			background-color: lighten($color-primary, 5%);
+			@include border-radius(3px);
+			padding: 5px;
+			text-decoration: none;
+			font-weight: 700;
+			width: 100%;
+			&:hover {
+			color: $color-sunflower-light-20;
+			}
+		}
+	}
+}

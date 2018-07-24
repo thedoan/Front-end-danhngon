@@ -1,0 +1,88 @@
+$border-size: 50px !default;
+$border-to-arrow: $border-size solid transparent !default;
+.c-breadcrumb { 
+	list-style: none; 
+	overflow: hidden; 
+	//font: 18px Helvetica, Arial, Sans-Serif;
+	//margin: 40px;
+	font-family: inherit;
+	font-weight: 400;
+	padding: 0;
+	li {
+		float: left;	
+		a {
+			color: $color-white;
+			text-decoration: none; 
+			padding: 10px 0 10px 55px;
+			background: $color-primary; 
+			position: relative; 
+			display: block;
+			float: left;
+			&:after {
+				content: " "; 
+				display: block; 
+				width: 0; 
+				height: 0;
+				border-top: $border-to-arrow;           /* Go big on the size, and let overflow hide */
+				border-bottom: $border-to-arrow;
+				border-left: 30px solid $color-primary;
+				position: absolute;
+				top: 50%;
+				margin-top: -$border-size; 
+				left: 100%;
+				z-index: 2; 
+			}
+			&:before {
+				content: " "; 
+				display: block; 
+				width: 0; 
+				height: 0;
+				border-top: $border-to-arrow;           /* Go big on the size, and let overflow hide */
+				border-bottom: $border-to-arrow;
+				border-left: 30px solid $color-white;
+				position: absolute;
+				top: 50%;
+				margin-top: -$border-size; 
+				margin-left: 1px;
+				left: 100%;
+				z-index: 1; 
+			}
+		}
+		&:first-child {
+			a {
+				padding-left: 10px;
+			}	
+		}
+		@for $i from 2 through 5 {
+			&:nth-child(#{$i}) {
+				a {
+					background: lighten($color-primary, ($i - 1)*10%);
+					&:after {
+						border-left-color: lighten($color-primary, ($i - 1)*10%);
+					}
+				}	
+			}
+		}
+		/*
+		&:last-child {
+			a {
+				background: transparent !important;
+				color: $color-white;
+				pointer-events: none;
+				cursor: default;
+				font-weight: 900;
+				&:after {
+					border: 0; 
+				}
+				&:before {
+					border: 0;
+				}
+			}
+		}
+		*/
+	}
+}
+.c-breadcrumb li a:hover { background: darken($color-primary, 10%); }
+.c-breadcrumb li a:hover:after { border-left-color: darken($color-primary, 10%)!important; }
+
+

@@ -1,7 +1,12 @@
 .content {
-	overflow: hidden;
-	@include span(8);	
-	padding-left: gutter();
-	padding-right: gutter();
-	@include box-shadow(0 0 .3rem rgba($color-black, .15));
+	//overflow: hidden;
+	//@include span(12);	
+	//padding-left: gutter();
+	//padding-right: gutter();
+	//@include box-shadow(0 0 .3rem rgba($color-black, .15));
+	&__container {
+		//clear: both;
+		@include span(12);
+		//display:table;
+	}
 }

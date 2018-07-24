@@ -1,43 +1,50 @@
 .main-nav {
 	//background-color: darken($color-medium-green, 10%);
 	@include box-shadow(0 0 .3rem rgba($color-black, .15));
-	@include clearfix();
-	//@include border-radius(5px);
 	padding: 5px;
+	@include respond-to() {
+		@include clearfix;
+	}
 	a {
 		color: lighten($color-medium-green, 35%);
 		text-decoration: none;
 	}
 	&__left {
-		float: left;	
-		@include span(4);
+		@include respond-to() {
+			float: left;
+		}
 	}
 	&__right {
-		float: right;
-		@include span(8 last);	
+		@include respond-to() {
+			float: right;
+		}
 	}
 	&__brand {
-		padding-top: 20px;
+		margin: 10px;
+		text-align: center;
+		@include respond-to() {
+			text-align: left;
+			margin: 20px auto;
+		}
 		a {
-			color: lighten($color-sunflower,20%);
-			font-size: 3em;
+			color: $color-sunflower-light-20;
+			font-size: 1.6rem;
 			font-weight: 300;
+			@include respond-to() {
+				font-size: 3em;
+			}
 		}
 	}
 	&__search {
-		float: right;
 	}
 	&__list {
-		float: right;
 	}
 	&__item {
-		list-style: none;	
-		float: left;
-		margin-left: 1rem;
-		line-height: 2rem;
-		&:last-child {
+		@include respond-to() {
+			float: left;
 			margin-right: 1rem;
 		}
+		list-style: none;	
 	}
 	&__link {
 		color: lighten($color-medium-green, 35%);

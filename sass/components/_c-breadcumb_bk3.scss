@@ -1,0 +1,72 @@
+.c-breadcrumb { 
+	list-style: none; 
+	overflow: hidden; 
+	//font: 18px Helvetica, Arial, Sans-Serif;
+	font-weight: 400;
+	//margin: 40px;
+	padding: 0;
+}
+.c-breadcrumb li { 
+	float: left; 
+}
+.c-breadcrumb li a {
+	color: $color-white;
+	text-decoration: none; 
+	padding: 10px 0 10px 55px;
+	background: $color-primary; /* fallback color */
+	background: hsla(140,49%,55%,1); 
+	position: relative; 
+	display: block;
+	float: left;
+}
+.c-breadcrumb li a:after { 
+	content: " "; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid hsla(140,49%,55%,1);
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	left: 100%;
+	z-index: 2; 
+}
+.c-breadcrumb li a:before { 
+	content: " "; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid $color-white;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	margin-left: 1px;
+	left: 100%;
+	z-index: 1; 
+}
+.c-breadcrumb li:first-child a {
+	padding-left: 10px;
+}
+.c-breadcrumb li:nth-child(2) a       { background: hsla(140,49%,65%,1); }
+.c-breadcrumb li:nth-child(2) a:after { border-left-color: hsla(140,49%,65%,1); }
+.c-breadcrumb li:nth-child(3) a       { background: hsla(140,49%,75%,1); }
+.c-breadcrumb li:nth-child(3) a:after { border-left-color: hsla(140,49%,75%,1); }
+.c-breadcrumb li:nth-child(4) a       { background: hsla(140,49%,85%,1); }
+.c-breadcrumb li:nth-child(4) a:after { border-left-color: hsla(140,49%,85%,1); }
+.c-breadcrumb li:nth-child(5) a       { background: hsla(140,49%,95%,1); }
+.c-breadcrumb li:nth-child(5) a:after { border-left-color: hsla(140,49%,95%,1); }
+.c-breadcrumb li:last-child a {
+	background: transparent !important;
+	color: $color-black;
+	pointer-events: none;
+	cursor: default;
+}
+.c-breadcrumb li:last-child a:after { border: 0; }
+.c-breadcrumb li a:hover { background: hsla(140,49%,45%,1); }
+.c-breadcrumb li a:hover:after { border-left-color: hsla(140,49%,45%,1)!important; }
+
+

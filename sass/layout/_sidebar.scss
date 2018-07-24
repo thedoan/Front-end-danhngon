@@ -1,6 +1,6 @@
 .sidebar {
-	@include span(4 last);
+	@include span(12);
 	padding-left: gutter();
 	padding-right: gutter();
-	@include box-shadow(0 0 .3rem rgba($color-black, .15));
+	//@include box-shadow(0 0 .3rem rgba($color-black, .15));
 }

@@ -1,0 +1,13 @@
+.c-go-top {
+		background-color: $color-white;	
+		height: 3.5rem;
+		width: 3.5rem;
+		position: fixed;
+		bottom: 1rem;
+		right: 1.5rem;
+		border-radius: 50%;
+		z-index: 2000;
+		box-shadow: 0 1rem 3rem rgba($color-black, .1);
+		text-align: center;
+		cursor: pointer;
+}
