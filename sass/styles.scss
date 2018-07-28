@@ -1,5 +1,6 @@
 @import 'compass';
-@import "susy";
+@import 'susy';
+
 /// Changing the default settings
 $susy: (
 /// Assigning value to the column property 
@@ -13,6 +14,7 @@ container: 1140px,
 /// for using the border-box 
 global-box-sizing: border-box 
 );
+
 /// 1. abstracts/
 @import 'abstracts/variables';
 @import 'abstracts/functions';
@@ -53,4 +55,3 @@ global-box-sizing: border-box
 /// 6. pages/
 
 /// 7. themes/
-

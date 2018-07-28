@@ -11,12 +11,15 @@
   "license": "ISC",
   "dependencies": {
     "bower": "^1.8.4",
+    "gulp": "^3.9.1",
+    "node-sass": "^4.9.2",
     "susy": "^2.2.12"
   },
   "devDependencies": {
     "breakpoint-sass": "^2.7.1",
-    "browser-sync": "^2.24.4",
-    "gulp-ruby-sass": "^3.0.0",
+    "browser-sync": "^2.24.6",
+    "compass-importer": "^0.4.1",
+    "compass-mixins": "^0.12.10",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4"
   }

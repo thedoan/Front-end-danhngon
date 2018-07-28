@@ -23,7 +23,8 @@ $border-to-arrow: $border-size solid transparent !default;
 				display: block; 
 				width: 0; 
 				height: 0;
-				border-top: $border-to-arrow;           /* Go big on the size, and let overflow hide */
+				/* Go big on the size, and let overflow hide */
+				border-top: $border-to-arrow;           			
 				border-bottom: $border-to-arrow;
 				border-left: 30px solid $color-primary;
 				position: absolute;

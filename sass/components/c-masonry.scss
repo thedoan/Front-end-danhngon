@@ -1,7 +1,8 @@
+@import 'compass';
 .c-masonry { /* Masonry container */
 	@include column-count(4);
 	@include column-gap(20px);
-	@include column-fill(initial);
+	//@include column-fill(initial);
 	/// ---dev--- 
 	counter-reset: masonry-item;	
 	/// ./ ---dev---
@@ -11,7 +12,7 @@
 		padding: 20px;
 		width: 100%; 
 		page-break-inside: avoid;          
-		//@include break-inside(avoid-column);
+		/// @include break-inside(avoid-column);
 		@include column-break-inside(avoid-column);
 		@include border-radius(3px);
 		background-color: $color-white;

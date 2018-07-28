@@ -1,6 +1,6 @@
 .site-header {
 	//@include box-shadow(0 .2rem .6rem rgba($color-black, .15));
-	margin-bottom: 1rem;
+
 	@include background-image(radial-gradient(lighten($color-primary, 30%), $color-primary));
 }
 
